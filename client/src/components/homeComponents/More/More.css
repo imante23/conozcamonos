@@ -1,0 +1,146 @@
+.more {
+  position: relative;
+  padding: 96px 32px 96px 94px;
+  /* padding: 96px 56px; */
+  background-image: url("../../../assets/mesa1.png");
+  background-size: cover;
+  background-position: center ;
+  color: #fff;
+
+  
+  max-width: 1220px;
+  margin: 96px auto;
+  border-radius: 32px;
+  overflow: hidden;
+
+
+  @media (max-width: 768px) {
+    margin: 0 auto;
+  }
+}
+
+/* Overlay general */
+.more__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  /* background: rgba(209, 218, 89, 0.808); */
+}
+
+/* Container */
+.more__container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 78px;
+  align-items: center;
+}
+
+/* Texto */
+/* .more__content {
+  font-family: "Inter", system-ui, sans-serif;
+} */
+
+.more__content h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.more__lead {
+  font-size: 18px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.more__content p {
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+/* Imagen */
+.more__image {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.more__image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .more__container {
+    grid-template-columns: 1fr;
+  }
+
+  .more__image img {
+    height: 300px;
+  }
+
+  .more__content h2 {
+    font-size: 32px;
+  }
+}
+
+
+
+
+
+.more__features {
+  display: flex;
+  /* flex: .3; */
+  flex-direction: column;
+  gap: 28px;
+
+  max-width: 25rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  padding: 14px 18px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 500;
+  color: currentColor;
+
+  background: rgba(255, 255, 255, 0.08);
+  /* background: rgba(0, 0, 0, 0.35);  */
+  border: 1px solid currentColor;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* Safari */
+}
+
+.feature--orange {
+  color: #ffca1c;
+}
+
+.feature--pink {
+  color: #ff5fd7;
+}
+
+.feature--purple {
+  color: #7bdaff;
+}
+
+
+
+@media (max-width: 900px) {
+  .more {
+    padding: 64px 24px;
+  }
+
+  .more__container {
+    grid-template-columns: 1fr;
+  }
+}

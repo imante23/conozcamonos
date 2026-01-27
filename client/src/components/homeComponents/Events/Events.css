@@ -1,0 +1,251 @@
+.events {
+  padding: 96px 24px;
+  /* background: #fafafa; */
+  background: #ffff;
+  border-top: 1px solid #e5e7eb;
+}
+
+.events__header {
+  text-align: center;
+  margin-bottom: 56px;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.events__header h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.events__header span {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.events__zone {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #111;
+  padding-left: 4rem;
+  margin-bottom: 5rem;
+
+  @media (max-width: 768px) {
+    padding-left: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+
+/* Grid */
+.events__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Si hay un solo evento */
+.events__grid--single {
+  grid-template-columns: 1fr;
+  max-width: 720px;
+}
+
+/* Card */
+.event-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid #e5e7eb;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.event-card:hover {
+  /* background: #fcd34d; */
+  transform: scale(1.03);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+}
+
+/* Overlay */
+.event-card__overlay {
+  position: absolute;
+  inset: 0;
+  /* background: rgb(255, 92, 92); */
+  /* background: #fcd34d; */
+  background: #ad1543;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+
+  z-index: 10;
+}
+
+.event-card__overlay span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Hover */
+.event-card:hover .event-card__overlay {
+  transform: scaleX(1);
+}
+
+
+
+.event-card__image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.events__grid--single .event-card__image img {
+  height: 320px;
+}
+
+.event-card__content {
+  padding: 24px 24px 0px 24px;
+  text-align: center;
+
+  background-color: #000000d9;
+  color: #fff;
+}
+
+.event-card__content h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  /* color: #111; */
+
+  color: #fcd34d;
+}
+
+.event-card__date {
+  font-size: 16px;
+  color: #ff5c5c;
+  margin-bottom: 4px;
+}
+
+.event-card__place {
+  font-size: 16px;
+  /* color: #666; */
+  color: #fafafa;
+  margin-bottom: 20px;
+}
+
+/* Botón */
+.event-card__button {
+  background: #fde68a;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin: 10px
+}
+
+.event-card__button:hover {
+  background: #fcd34d;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .events__grid {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+  }
+}
+
+
+
+/* Body */
+.event-card__body {
+  display: flex;
+  padding: 24px;
+  gap: 24px;
+  align-items: center;
+  
+}
+
+/* Fecha */
+.event-date {
+  min-width: 72px;
+  text-align: center;
+  border-right: 1px solid #e5e5e5;
+  padding-right: 16px;
+}
+
+.event-date__month {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: #ff5c5c;
+  margin-bottom: 6px;
+}
+
+.event-date__day {
+  font-size: 32px;
+  font-weight: 600;
+  color: #111;
+}
+
+
+
+
+.event-card {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Badge */
+.event-card__badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  background: #ff5c5c;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  padding: 6px 10px;
+  border-radius: 999px;
+
+  z-index: 3;
+  pointer-events: none;
+}
+
+
+
+
+.event-card__registro {
+  font-size: 16px;
+  /* color: #666; */
+  color: #fafafa;
+  margin-bottom: 10px;
+}
+
+.event-card__slogan {
+  font-size: 12px;
+  color: #928f31;
+  margin-bottom: 10px;
+  font-style: italic;
+}
