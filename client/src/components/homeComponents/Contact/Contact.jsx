@@ -117,7 +117,7 @@ export default function Contact() {
 
           <a href="#" aria-label="Instagram">
             <span className="contact__icon"><IconInstagram /></span>
-            <span>/conozcamonosapp</span>
+            <span>/conozcamonosba</span>
           </a>
         </div>
       </div>

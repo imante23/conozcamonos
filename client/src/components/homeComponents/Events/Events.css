@@ -249,3 +249,12 @@
   margin-bottom: 10px;
   font-style: italic;
 }
+
+
+
+
+.event-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}

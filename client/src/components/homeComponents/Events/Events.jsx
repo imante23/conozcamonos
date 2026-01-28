@@ -93,7 +93,15 @@ export default function Events() {
         }`}
       >
         {events.map(event => (
-          <article className="event-card" key={event.id}>
+            <a
+            key={event.id}
+            href="https://forms.gle/wiaB8KG9mVeAL2D69"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="event-card-link"
+          >
+
+          <article className="event-card" >
              <div className="event-card__overlay">
                 <span>Reservar</span>
             </div>
@@ -118,6 +126,7 @@ export default function Events() {
               </button> */}
             </div>
           </article>
+          </a>
         ))}
       </div>
     </section>

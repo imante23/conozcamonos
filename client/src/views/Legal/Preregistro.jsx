@@ -38,7 +38,7 @@ export default function Preregistro() {
         <li>serán almacenados de forma segura</li>
         </ul>
         <p>
-          Podés solicitar la modificación o eliminación de tus datos en cualquier momento escribiendo a info@feriadecitas.com
+          Podés solicitar la modificación o eliminación de tus datos en cualquier momento escribiendo a conozcamonos@feriadecitas.com
         </p>
 
 

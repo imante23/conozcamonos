@@ -16,9 +16,14 @@ export default function Header() {
           Solo conversaciones reales.
         </p>
 
-        <button className="header__button">
+        <a
+          href="https://forms.gle/RAQRGiFMRUVrUpky9"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="header__button"
+        >
           Sumarme
-        </button>
+        </a>
       </div>
     </section>
   );

@@ -74,3 +74,9 @@
     font-size: 34px;
   }
 }
+
+
+.header__button {
+  display: inline-block;
+  text-decoration: none;
+}
