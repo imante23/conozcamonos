@@ -1,8 +1,10 @@
 import "./Events.css";
-import Image1 from "../../../assets/pareja20-2.jpg";
+// import Image1 from "../../../assets/pareja20-2.jpg";
+import Image1 from "../../../assets/card1.avif";
 // import Image2 from "../../../assets/pareja23.avif";
-import Image2 from "../../../assets/pareja10.jpg";
-import Image3 from "../../../assets/pareja-50-2.jpg";
+// import Image2 from "../../../assets/pareja10.jpg";
+import Image2 from "../../../assets/portada-form2.png";
+import Image3 from "../../../assets/ad22.jpg";
 
 const events = [
 //   {
@@ -42,7 +44,9 @@ const events = [
     title: "Solteros en sus 30s",
     day: "21",
     month: "ENE",
-    slogan: "Tu etapa, con apertura a edades cercanas.",
+    // slogan: "Tu etapa, con apertura a edades cercanas.",
+    slogan:"Conversaciones reales, sin presión.",
+    link:"https://forms.gle/Wjuku9zgiBvqaQsz8",
     registro: "Cupos para febrero 2026",
     place: "San Isidro, Buenos Aires"
    },
@@ -53,7 +57,8 @@ const events = [
     title: "Solteros en sus 40s",
     day: "21",
     month: "ENE",
-    slogan: "Tu etapa, con apertura a edades cercanas.",
+    slogan: "Un primer encuentro, sin expectativas.",
+    link:"https://forms.gle/wiaB8KG9mVeAL2D69",
     registro: "Cupos para febrero 2026",
     place: "Escobar, Buenos Aires"
    },
@@ -64,7 +69,8 @@ const events = [
     title: "Solteros en sus 50s",
     day: "21",
     month: "ENE",
-    slogan: "Tu etapa, con apertura a edades cercanas.",
+    slogan: "Para quienes quieren volver a conocer a alguien.",
+    link:"https://forms.gle/VCoAvr9bGcdU6PwB7",
     registro: "Cupos para febrero 2026",
     place: "Pilar, Buenos Aires"
    }
@@ -95,7 +101,7 @@ export default function Events() {
         {events.map(event => (
             <a
             key={event.id}
-            href="https://forms.gle/wiaB8KG9mVeAL2D69"
+            href={event.link}
             target="_blank"
             rel="noopener noreferrer"
             className="event-card-link"

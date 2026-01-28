@@ -14,19 +14,21 @@ pensada para que conocer personas nuevas sea cómodo y natural.</p>
 para charlar, conocer otras personas y ver luego si hay interés en seguir en contacto.</p>
         
 
+        
+      {/* Steps */}
         <div className="speed-dating__steps">
           <div className="step">
-            <div className="step__icon">📍</div>
+            <span className="step__number">1</span>
             <span className="step__text">Llegás</span>
           </div>
 
           <div className="step">
-            <div className="step__icon">💬</div>
+            <span className="step__number">2</span>
             <span className="step__text">Conversás</span>
           </div>
 
           <div className="step">
-            <div className="step__icon">❤️</div>
+            <span className="step__number">3</span>
             <span className="step__text">Conectás</span>
           </div>
         </div>
@@ -65,9 +67,32 @@ para charlar, conocer otras personas y ver luego si hay interés en seguir en co
 
 //           <div className="step">
 //             <span className="step__number">3</span>
-//             <span className="step__text">Elegís</span>
+//             <span className="step__text">Conectás</span>
 //           </div>
 //         </div>
 //       </div>
 //     </section>
 //   );
+
+
+
+// CON ICONOS
+
+{/* <div className="speed-dating__steps">
+          <div className="step">
+            <div className="step__icon">📍</div>
+            <span className="step__text">Llegás</span>
+          </div>
+
+          <div className="step">
+            <div className="step__icon">💬</div>
+            <span className="step__text">Conversás</span>
+          </div>
+
+          <div className="step">
+            <div className="step__icon">❤️</div>
+            <span className="step__text">Conectás</span>
+          </div>
+        </div>
+      </div>
+    </section> */}
